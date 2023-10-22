@@ -226,14 +226,39 @@
     margin-top: 24px;
     height: 120px;
 }
-
+/* СТИЛИЗУЕМ РАДИО КНОПКИ */
 .choose_gender {
     margin-top: 8px;
 }
 
-.gender {
-    background-image: url(../img/radio.svg);
+.choose_gender input[type=radio] {
+	display: none;
 }
+
+.choose_gender label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	line-height: 18px;
+}
+.choose_gender label:before {
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 16px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background: url(../img/radio_empty.svg) 0 0 no-repeat;
+}
+ 
+/* Checked */
+.choose_gender input[type=radio]:checked + label:before {
+	background: url(../img/radio.svg) 0 0 no-repeat;
+}
+
+/* СТИЛИЗУЕМ РАДИО КНОПКИ (КОНЕЦ) */
 
 .label {
     margin-right: 16px;
@@ -467,7 +492,7 @@
 }
 
 .tech_support {
-    color: var(--, #AAA);
+    color: #9E9E9E;
 
     /* P paragraph */
     font-family: Museo Sans Cyrl;
@@ -493,6 +518,14 @@
     margin-right: 32px;
 }
 
+.social_media_button {
+    display: flex;
+    margin-left: auto;
+}
+
+.button_vk_tg {
+    margin-right: 8px;
+}
 
 .footer_line_2 {
     width: 100%;
@@ -515,8 +548,68 @@
     display: flex;
 }
 
+.made_in {
+    margin-left: auto;
+    margin-top: auto;
+    color: #9E9E9E;
+    font-family: Museo Sans Cyrl;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; /* 116.667% */
+    letter-spacing: -0.12px;
+}
+
+.bvsr {
+    margin-top: auto;
+    margin-left: 3.5px;
+    color: #5D5B66;
+    font-family: Museo Sans Cyrl;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; /* 116.667% */
+    letter-spacing: -0.12px;
+}
+
 .footer_line_3 {
     height: 12px;
     align-self: stretch;
     background: var(--7953-c-3-purple-main, #7953C3);
 }
+
+/* SECOND PAGE SECOND PAGE SECOND PAGE SECOND PAGE SECOND PAGE SECOND PAGE*/
+
+.student_or_teacher {
+    margin-bottom: 24px;
+}
+
+/* СТИЛИЗУЕМ РАДИО КНОПКИ */
+.student_or_teacher input[type=radio] {
+	display: none;
+}
+
+.student_or_teacher label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	line-height: 18px;
+}
+.student_or_teacher label:before {
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 16px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background: url(../img/radio_empty.svg) 0 0 no-repeat;
+}
+ 
+/* Checked */
+.student_or_teacher input[type=radio]:checked + label:before {
+	background: url(../img/radio.svg) 0 0 no-repeat;
+}
+
+/* СТИЛИЗУЕМ РАДИО КНОПКИ (КОНЕЦ) */
