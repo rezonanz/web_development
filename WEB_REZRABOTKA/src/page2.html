@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HW Page 2</title>
     <link rel="stylesheet" href="css/stanis.css">
+    <script src="./js/script.js"></script>
 </head>
 <body>
-
     <header class="header">
         <div class="header_logo">
             <a href="/src/index.html">
@@ -38,6 +38,67 @@
                     <input class="gender" name="student_or_teacher" id="teacher" type="radio" placeholder="textext">
                     <label for="teacher">Сотрудник</label>
                 </div>
+
+                <div class="choose_course">
+                    <p class="course_title">Курс</p>
+                    <div class="form_radio_group">
+                            <input id="course_1" type="radio" name="radio" value="1" checked>
+                            <label for="course_1">1</label>
+                        
+                        
+                            <input id="course_2" type="radio" name="radio" value="2">
+                            <label for="course_2">2</label>
+                        
+                        
+                            <input id="course_3" type="radio" name="radio" value="3">
+                            <label for="course_3">3</label>
+
+                            <input id="course_4" type="radio" name="radio" value="4">
+                            <label for="course_4">4</label>
+                        
+                            <input id="course_5" type="radio" name="radio" value="5">
+                            <label for="course_5">5</label>
+
+                            <input id="course_6" type="radio" name="radio" value="6">
+                            <label for="course_6">6</label>
+                    </div>
+                    <br>
+                    <div class="graduated_hse_checkbox">
+                        <input name="graduated_hse" id="graduated_hse" type="checkbox" placeholder="textext">
+                        <label class="graduated_hse" for="graduated_hse">Уже окончил вышку</label>
+                    </div>
+                </div>
+
+                <div class="select_info_block">
+                    <div class="dropdown_item">
+                        <p class="selected_title">Ступень образования</p>
+                        <div class="selected">
+                            <p>Ступень образования</p>
+                            <div class="caret"></div>
+                        </div>
+                        <ul class="dropdown_menu">
+                            <li class="active">Бакалавриат</li>
+                            <li>Специалитет</li>
+                            <li>Магистратура</li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown_item">
+                        <p class="selected_title">Факультет</p>
+                        <div class="selected">
+                            <p>Факультет</p>
+                            <div class="caret"></div>
+                        </div>
+                        <ul class="dropdown_menu">
+                            <li class="active">МИЭМ</li>
+                            <li>ФКН</li>
+                            <li>МИЭФ</li>
+                            <li>ФАКФИЗ</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!--   ___________________________________________________   -->
 
                 <div class="upload_photo_block">
                     <div class="upload_button_block">
