@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HW Page 1</title>
     <link rel="stylesheet" href="css/stanis.css">
-    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="css/styleforjs.css">
 </head>
 <body>
 
     <header class="header">
         <div class="header_logo">
-            <a href="/src/index.html">
+            <a href="/src/page1.html">
                 <img src="img/лого.svg" alt="logo">
             </a>
         </div>
@@ -33,27 +33,32 @@
         <div class="big_regisration_block">
             <div class="left_registration_block">
                 <div class="form">
-                    <form>
+                    <form class="registration_form" id="registration_form" action="" nonvalidate>
                         <div class="upload_photo_block">
                             <div class="upload_button_block">
                                 <p class="minizagolovok">Аватар профиля</p>
-                                <button class="upload_button">Загрузить</button>
+                                <input class="upload_button" type="button" value="Загрузить" />
                             </div>
                             <p class="small_text">Загрузите фотографию весом не более 10 мб</p>
                         </div>
-                        <!-- <label for="name">Введите имя:</label> -->
                         <input class="form_line" name="name" id="name" type="text" placeholder="Имя и фамилия">
+                        <p class="must" id="nameempty"></p>
                         <div class="choose_gender">
-                            <input class="gender" name="gender" id="man" type="radio" placeholder="textext">
+                            <input class="gender" name="gender" id="man" type="radio" placeholder="textext" value="Парень">
                             <label class="label" for="man">Парень</label>
-                            <input class="gender" name="gender" id="girl" type="radio" placeholder="textext">
+                            <input class="gender" name="gender" id="girl" type="radio" placeholder="textext" value="Девушка">
                             <label for="girl">Девушка</label>
                         </div>
                         <input class="form_line_birthday" name="birthday" id="birthday" type="date" placeholder="Дата Рождения">
+                        <p class="must" id="birthdayempty"></p>
                         <input class="form_line" name="tg" id="tg" type="text" placeholder="Телеграм">
+                        <p class="must" id="tgempty"></p>
                         <input class="form_line" name="tel" id="tel" type="tel" placeholder="Номер телефона">
+                        <p class="must" id="telempty"></p>
                         <input class="form_line_about_me" name="about_me" id="about_me" type="text" placeholder="О себе">
+                        <p class="must" id="about_meempty"></p>
                         <p class="about_me_examle">Например: Редко готовлю, но люблю ботать на кухне по ночам. Хочу завести собаку. Очень люблю читать, играть в хорроры и смотреть аниме. Открыт к общению и взаимопомощи :)</p>
+                        <!-- <button type="submit">Продолжить</button> -->
                     </form>
                 </div>
 
@@ -72,15 +77,15 @@
                         <button class="show_contact_button">Показать контакты</button>
                     </div>
                     <div class="user_information_right_block">
-                        <p class="name_user_information_right_block">Резо Лешкашели</p>
+                        <p class="name_user_information_right_block name_empty"></p>
                         <div class="small_infa_user_information_right_block">
-                            <p class="text1_text_small">Парень</p>
+                            <p class="text1_text_small gender_empty" id="user_gender"></p>
                             <img src="img/Ellipse 14.svg" alt="elipse">
-                            <p class="text2_text_small">17 лет</p>
+                            <p class="text2_text_small">лет</p>
                             <img src="img/Ellipse 14.svg" alt="elipse">
                             <div class="empty_block"></div>
                         </div>
-                        <div class="big_empty"></div>
+                        <div class="big_empty user_about_me_text" id="user_about_me"></div>
                     </div>
                     
                 </div>
@@ -94,9 +99,11 @@
                     
                 </div>
             </div>
-
         </div>
-        <button class="next_button">Продолжить</button>
+        <!-- <button type="submit">Продолжить</button> -->
+        <button type="submit" class="next_button" form="registration_form">Продолжить</button>
+        <!-- <button class="next_button">Продолжить</button> -->
+
     </main>
 
     <footer>
@@ -126,4 +133,5 @@
         <div class="footer_line_3"></div>
     </footer>
 </body>
+<script src="./js/script.js"></script>
 </html>

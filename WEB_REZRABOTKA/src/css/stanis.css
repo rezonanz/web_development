@@ -389,11 +389,16 @@
 }
 
 .big_empty {
-    margin-top: 68px;
+    margin-top: 14px;
     width: 374px;
-    height: 89px;
+    height: 137px;
     border-radius: 4px;
     background: var(--eeeef-1-filter-hover, #EEEEF1);
+}
+
+.user_about_me_text {
+    margin-top: 14px;
+    font-size: 12px;
 }
 
 .we_dont_know {
@@ -623,6 +628,11 @@
     margin-bottom: 4px;
 }
 
+.emoji_smile {
+    margin-top: auto;
+    margin-left: auto;
+}
+
 /* _______________________ */
 
 .form_radio_group {
@@ -661,6 +671,7 @@
 
 .dropdown_item {
     margin-bottom: 16px;
+
 }
 
 .selected_title {
@@ -679,6 +690,7 @@
     border-color: #F4F4F6;
     background: #F4F4F6;
     color: #A1A6B1;
+    cursor: pointer;
 }
 
 .selected-clicked {} /* позже описываем в js */
@@ -704,7 +716,11 @@
     transition: 0.3s;
 }
 
-.dropdown_menu {
+.caret_rotate {
+    transform: rotate(180deg);
+}
+
+.dropdown_menu { 
     list-style: none;
     margin-top: 10px;
     border-radius: 8px;
@@ -723,3 +739,17 @@
     background-color: #F4F4F6;
     border-radius: 8px;
 }
+
+.active {
+    background: var(--ffffff-white-main, #FFF);
+}
+
+.dropdown_menu_open {
+     display: block;
+     opacity: 1;
+}
+
+
+
+
+

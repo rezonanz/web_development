@@ -10,7 +10,7 @@
 <body>
     <header class="header">
         <div class="header_logo">
-            <a href="/src/index.html">
+            <a href="/src/page1.html">
                 <img src="img/лого.svg" alt="logo">
             </a>
         </div>
@@ -42,7 +42,7 @@
                 <div class="choose_course">
                     <p class="course_title">Курс</p>
                     <div class="form_radio_group">
-                            <input id="course_1" type="radio" name="radio" value="1" checked>
+                            <input id="course_1" type="radio" name="radio" value="1">
                             <label for="course_1">1</label>
                         
                         
@@ -97,36 +97,21 @@
                         </ul>
                     </div>
 
-                </div>
-                <!--   ___________________________________________________   -->
-
-                <div class="upload_photo_block">
-                    <div class="upload_button_block">
-                        <p class="minizagolovok">Аватар профиля</p>
-                        <button class="upload_button">Загрузить</button>
-                    </div>
-                    <p class="small_text">Загрузите фотографию весом не более 10 мб</p>
-                </div>
-                
-                <div class="form">
-                    <form>
-                        <!-- <label for="name">Введите имя:</label> -->
-                        <input class="form_line" name="name" id="name" type="text" placeholder="Имя и фамилия">
-                        <div class="choose_gender">
-                            <input class="gender" name="gender" id="man" type="radio" placeholder="textext">
-                            <label class="label" for="man">Парень</label>
-                            <input class="gender" name="gender" id="girl" type="radio" placeholder="textext">
-                            <label for="girl">Девушка</label>
+                    <div class="dropdown_item">
+                        <p class="selected_title">Образовательная программа</p>
+                        <div class="selected">
+                            <p>Образовательная программа</p>
+                            <div class="caret"></div>
                         </div>
-                        <input class="form_line_birthday" name="birthday" id="birthday" type="date" placeholder="Дата Рождения">
-                        <input class="form_line" name="tg" id="tg" type="text" placeholder="Телеграм">
-                        <input class="form_line" name="tel" id="tel" type="tel" placeholder="Номер телефона">
-                        <input class="form_line_about_me" name="about_me" id="about_me" type="text" placeholder="О себе">
-                        <p class="about_me_examle">Например: Редко готовлю, но люблю ботать на кухне по ночам. Хочу завести собаку. Очень люблю читать, играть в хорроры и смотреть аниме. Открыт к общению и взаимопомощи :)</p>
-                    </form>
+                        <ul class="dropdown_menu">
+                            <li>ИТСС</li>
+                            <li>ИВТ</li>
+                            <li>ИБ</li>
+                            <li>ИВТ</li>
+                        </ul>
+                    </div>
+                    <input class="form_line" name="about_me" id="about_me" type="text" placeholder="Работа">
                 </div>
-
-
 
             </div>
 
@@ -155,11 +140,11 @@
                 </div>
                 <div class="down_right_registration_block">
                     <div class="left_down_right_registration_block">
-                        <p class="we_dont_know">Мы совсем ничего про тебя не знаем</p>
-                        <p class="tell_about_you">Расскажи о себе.</p>
-                        <p class="tell_about_you">Люди пишут тем, кому доверяют. Тем более при поиске соседа</p>
+                        <p class="we_dont_know">Расскажи где ты учишься</p>
+                        <p class="tell_about_you">Часто студенты ищут соседей по схожим интересам</p>
+                        <!-- <p class="tell_about_you">Люди пишут тем, кому доверяют. Тем более при поиске соседа</p> -->
                     </div>
-                    <div class="emoji_sad"><img src="img/emoji_sad.svg" alt="emoji"></div>
+                    <div class="emoji_smile"><img src="img/emoji_smile.svg" alt="emoji"></div>
                     
                 </div>
             </div>
