@@ -1,3 +1,38 @@
+
+const dropdowns = document.querySelectorAll('.dropdown');
+
+dropdowns.forEach(dropdown => {
+    const select = dropdown.querySelector('.select');
+    const caret = dropdown.querySelector('.caret');
+    const menu = dropdown.querySelector('.menu');
+    const selected = dropdown.querySelector('.selected');
+    const options = dropdown.querySelectorAll('.menu li');
+
+
+    select.addEventListener('click', () => {
+        select.classList.toggle('select-clicked');
+        caret.classList.toggle('caret-rotate');
+        menu.classList.toggle('menu-open');
+    });
+
+    options.forEach(option => {
+        option.addEventListener('click', () => {
+            selected.innerText = option.innerText;
+            select.classList.remove('select-clicked');
+            caret.classList.remove('caret-rotate');
+            menu.classList.remove('menu-open');
+
+            options.forEach(option => {
+                option.classList.remove('active');
+            });
+            option.classList.add('active');
+        });
+    });
+});
+
+
+
+
 // ПЕРВАЯ СТРАНИЦА!
 let form = document.querySelector('.registration_form');
 let inputName = document.querySelector('#name');
@@ -106,27 +141,27 @@ form.onsubmit = function() {
 // }
 
 
-const dropdowns = document.querySelectorAll(".dropdown_item");
+// const dropdowns = document.querySelectorAll(".dropdown_item");
 
-dropdowns.forEach(dropdown => {
-    const select = document.querySelector(".selected");
-    const caret = document.querySelector(".caret");
-    const menu = document.querySelector(".dropdown_menu");
-    const options = document.querySelector(".dropdown_menu li");
+// dropdowns.forEach(dropdown => {
+//     const select = document.querySelector(".selected");
+//     const caret = document.querySelector(".caret");
+//     const menu = document.querySelector(".dropdown_menu");
+//     const options = document.querySelector(".dropdown_menu li");
      
-    select.addEventListener('click', () => {
-        // select.classList.toggle('select-clicked');
-        caret.classList.toggle('caret-rotate');
-        menu.classList.toggle('dropdown_menu_open')
-    });
+//     select.addEventListener('click', () => {
+//         // select.classList.toggle('select-clicked');
+//         caret.classList.toggle('caret-rotate');
+//         menu.classList.toggle('dropdown_menu_open')
+//     });
 
-    options.forEach(option => {
-        option.addEventListener('click', () => {
-            caret.classList.remove('caret-rotate');
-            menu.classList.remove('dropdown_menu_open');
-        });
-    });
+//     options.forEach(option => {
+//         option.addEventListener('click', () => {
+//             caret.classList.remove('caret-rotate');
+//             menu.classList.remove('dropdown_menu_open');
+//         });
+//     });
 
-});
+// });
 
 

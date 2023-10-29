@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HW Page 2</title>
     <link rel="stylesheet" href="css/stanis.css">
-    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="css/styleforjs.css">
 </head>
 <body>
     <header class="header">
@@ -69,7 +69,65 @@
                     </div>
                 </div>
 
-                <div class="select_info_block">
+                <p class="select_title">Ступень образования</p>
+                <div class="dropdown">
+                    <div class="select">
+                        <span class="selected">Ступень образования</span>
+                        <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                        <li>Бакалавриат</li>
+                        <li>Специалитет</li>
+                        <li>Магистратура</li>
+                    </ul>
+                </div>
+
+                <p class="select_title">Факультет</p>
+                <div class="dropdown">
+                    <div class="select">
+                        <span class="selected">Факультет</span>
+                        <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                        <li>МИЭМ</li>
+                        <li>МИЭФ</li>
+                        <li>ФАКФИЗ</li>
+                        <li>ФКН</li>
+                    </ul>
+                </div>
+
+                <p class="select_title">Образовательная программа</p>
+                <div class="dropdown">
+                    <div class="select">
+                        <span class="selected">Образовательная программа</span>
+                        <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                        <li>ИТСС</li>
+                        <li>ИВТ</li>
+                        <li>ПМ</li>
+                        <li>ПМИ</li>
+                        <li>ПИ</li>
+                        <li>ИБ</li>
+                        <li>КБ</li>
+                    </ul>
+                </div>
+
+                <input class="form_line" name="name" id="name" type="text" placeholder="Работа">
+
+                <!-- <div class="dropdown">
+                    <div class="select">
+                        <span class="selected">Ступень образования</span>
+                        <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                        <li>Бакалавриат</li>
+                        <li>Специалитет</li>
+                        <li>Магистратура</li>
+                    </ul>
+                </div> -->
+
+                <!-- <div class="select_info_block">
                     <div class="dropdown_item">
                         <p class="selected_title">Ступень образования</p>
                         <div class="selected">
@@ -111,7 +169,7 @@
                         </ul>
                     </div>
                     <input class="form_line" name="about_me" id="about_me" type="text" placeholder="Работа">
-                </div>
+                </div> -->
 
             </div>
 
@@ -179,5 +237,6 @@
         </div>
         <div class="footer_line_3"></div>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
